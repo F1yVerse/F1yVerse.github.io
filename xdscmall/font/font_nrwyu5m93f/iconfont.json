@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7090061",
+      "name": "双箭头 上",
+      "font_class": "shuangjiantoushang",
+      "unicode": "e713",
+      "unicode_decimal": 59155
+    }
+  ]
+}

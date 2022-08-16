@@ -1,0 +1,703 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #555;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  box-sizing: border-box;
+  user-select: none;
+}
+body > div {
+  width: 100%;
+}
+body > div > [class$="-container"] {
+  width: 1390px;
+  margin: 0 auto;
+}
+.hot-sales {
+  margin: 10px auto;
+}
+.hot-sales .hot-sales-container {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.hot-sales .hot-sales-container > .title {
+  width: 40px;
+  height: 100%;
+  background-color: #f42424;
+  color: #fff;
+  font-size: 16px;
+  padding: 27px 12px;
+  display: flex;
+  line-height: 1.5;
+}
+.hot-sales .hot-sales-container > .container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+}
+.hot-sales .hot-sales-container > .container > .item {
+  width: 310px;
+  height: 110px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.hot-sales .hot-sales-container > .container > .item > a {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+.hot-sales .hot-sales-container > .container > .item > a .image {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hot-sales .hot-sales-container > .container > .item > a .image img {
+  height: 100%;
+  display: block;
+}
+.hot-sales .hot-sales-container > .container > .item .detail {
+  flex: 1;
+}
+.hot-sales .hot-sales-container > .container > .item .detail > a.name {
+  width: 160px;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.hot-sales .hot-sales-container > .container > .item .detail > a.name:hover {
+  color: #f42424;
+}
+.hot-sales .hot-sales-container > .container > .item .detail > p.price {
+  font-size: 14px;
+  color: #f42424;
+  font-weight: bold;
+  padding-top: 6px;
+}
+.hot-sales .hot-sales-container > .container > .item .detail > a.buy {
+  padding: 0 10px;
+  height: 23px;
+  line-height: 23px;
+  display: inline-block;
+  color: #fff;
+  background-color: #f42424;
+  margin-top: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.hot-sales .hot-sales-container > .container > .item .detail > a.buy:hover {
+  background-color: #ec5051;
+}
+.hot-sales .hot-sales-container > .container > .item:hover {
+  border: 1px solid #ec5051;
+}
+.classification {
+  padding: 12px 0;
+  font-size: 12px;
+}
+.classification .classification-container .trigger {
+  width: 151px;
+  height: 26px;
+  border: 1px solid #d2d2d2;
+  line-height: 24px;
+  position: relative;
+  padding: 0 10px;
+}
+.classification .classification-container .trigger .menu {
+  display: none;
+  width: 230px;
+  height: 38px;
+  border: 1px solid #d2d2d2;
+  position: absolute;
+  left: -1px;
+  top: 24px;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  z-index: 2;
+}
+.classification .classification-container .trigger .menu::before {
+  position: absolute;
+  content: "";
+  width: 149px;
+  height: 1px;
+  background-color: #fff;
+  left: 0px;
+  top: -1px;
+}
+.classification .classification-container .trigger .menu a:hover {
+  color: #f42424;
+}
+.classification .classification-container .trigger:hover {
+  border-color: #f42424;
+}
+.classification .classification-container .trigger:hover .menu {
+  display: flex;
+  border-color: #f42424;
+}
+.brand {
+  margin-bottom: 15px;
+}
+.brand .brand-container {
+  height: 78px;
+  border: 1px dashed #d2d2d2;
+  padding: 10px 120px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.brand .brand-container a .item {
+  width: 120px;
+  height: 56px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.brand .brand-container a .item img {
+  width: 100%;
+  height: 100%;
+}
+.brand .brand-container a .item p {
+  display: none;
+  font-size: 12px;
+  color: #f42424;
+  line-height: 54px;
+}
+.brand .brand-container a .item:hover::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: calc(100% - 1px);
+  height: calc(100% - 2px);
+  border: 2px solid #f42424;
+  z-index: 1;
+}
+.brand .brand-container a .item:hover img {
+  display: none;
+}
+.brand .brand-container a .item:hover p {
+  display: block;
+}
+.brand .brand-container a:last-of-type .item {
+  border-right: 1px solid #dddddd;
+}
+.brand .brand-container .left {
+  width: 110px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #8c8c8c;
+  font-size: 12px;
+  line-height: 28px;
+  top: 10px;
+  left: 30px;
+}
+.brand .brand-container .right {
+  color: #8c8c8c;
+  position: absolute;
+  width: 75px;
+  height: 20px;
+  top: 15px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.brand .brand-container .right .arrow {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d2d2d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.brand .brand-container .right .arrow:hover {
+  border: 1px solid #f42424;
+}
+.brand .brand-container .right .arrow:hover i.iconfont {
+  color: #f42424;
+}
+.brand .brand-container .right .arrow i.iconfont {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+.brand .brand-container .right .word {
+  width: 50px;
+  height: 20px;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #8c8c8c;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border: 1px solid #d2d2d2;
+  line-height: 18px;
+  cursor: pointer;
+}
+.brand .brand-container .right .word i.iconfont {
+  font-size: 14px;
+  color: #8c8c8c;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  line-height: 18px;
+}
+.brand .brand-container .right .word span {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+.brand .brand-container .right .word:hover {
+  border: 1px solid #f42424;
+}
+.brand .brand-container .right .word:hover i.iconfont {
+  color: #f42424;
+}
+.brand .brand-container .right .word:hover span {
+  color: #f42424;
+}
+.filter .filter-container {
+  width: 1390px;
+  height: 40px;
+  padding: 7px 0;
+  border: 1px solid #d2d2d2;
+}
+.filter .filter-container a {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 24px;
+  color: #222;
+  padding: 0 20px;
+  position: relative;
+}
+.filter .filter-container a.right {
+  padding: 0 8px 0 14px;
+  float: right;
+}
+.filter .filter-container a i.iconfont {
+  font-size: 12px;
+  color: #222;
+}
+.filter .filter-container a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d2d2d2;
+}
+.filter .filter-container a.right::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d2d2d2;
+}
+.filter .filter-container a.right i.iconfont {
+  font-size: 16px;
+}
+.filter .filter-container a.active {
+  color: #f42424;
+}
+.filter .filter-container a.active i.iconfont {
+  color: #f42424;
+}
+.filter .filter-container a.sort:hover {
+  color: #f42424;
+}
+.filter .filter-container a.sort:hover i.iconfont {
+  color: #f42424;
+}
+.filter .filter-container div.inp {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 24px;
+  color: #222;
+  padding: 0 20px;
+  position: relative;
+}
+.filter .filter-container div.inp input {
+  width: 70px;
+  height: 25px;
+  outline: none;
+  border: 1px solid #d2d2d2;
+  border-radius: none;
+  padding: 0 5px;
+}
+.filter .filter-container div.inp::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d2d2d2;
+}
+.filter .filter-container div.check {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 24px;
+  color: #222;
+  padding: 0 0 0 19px;
+  position: relative;
+}
+.filter .filter-container div.check span {
+  padding-left: 18px;
+  position: relative;
+  cursor: pointer;
+}
+.filter .filter-container div.check span:hover {
+  color: #f42424;
+}
+.filter .filter-container div.check span:hover::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border: 1px solid #f42424;
+}
+.filter .filter-container div.check span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border: 1px solid #d2d2d2;
+}
+.filter .filter-container div.turnPages {
+  width: 70px;
+  height: 24px;
+  float: right;
+  color: #8c8c8c;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 28px;
+}
+.filter .filter-container div.turnPages div {
+  width: 20px;
+  height: 16px;
+  border: 1px solid #d2d2d2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter .filter-container div.turnPages div i.iconfont {
+  font-size: 12px;
+  color: #d2d2d2;
+}
+.commodities .commodities-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.commodities .commodities-container > .left {
+  width: 1158px;
+  flex: 1;
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.commodities .commodities-container > .left .good {
+  width: 231.66px;
+  height: 470px;
+}
+.commodities .commodities-container > .left .good:hover > .con {
+  box-shadow: 0 0 4px 0 rgba(85, 85, 85, 0.4);
+}
+.commodities .commodities-container > .left .good > .con {
+  width: 100%;
+  height: 447px;
+  padding: 11px;
+}
+.commodities .commodities-container > .left .good > .con .image {
+  width: 209px;
+  height: 209px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commodities .commodities-container > .left .good > .con .image img {
+  display: block;
+  height: 100%;
+}
+.commodities .commodities-container > .left .good > .con .sider {
+  width: 100%;
+  height: 30px;
+  margin-top: 12px;
+}
+.commodities .commodities-container > .left .good > .con .sider .small {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 2px;
+  border: 1px solid #d2d2d2;
+  cursor: pointer;
+}
+.commodities .commodities-container > .left .good > .con .sider .small:hover {
+  border: 1px solid #f42424;
+}
+.commodities .commodities-container > .left .good > .con .sider .small .box {
+  width: 26px;
+  height: 26px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.commodities .commodities-container > .left .good > .con .sider .small .box img {
+  height: 100%;
+}
+.commodities .commodities-container > .left .good > .con p.price {
+  width: 100%;
+  height: 30px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.commodities .commodities-container > .left .good > .con p.price span.pri {
+  font-size: 20px;
+  color: #f42424;
+}
+.commodities .commodities-container > .left .good > .con p.price span.sold {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+.commodities .commodities-container > .left .good > .con p.p-name {
+  width: 100%;
+  height: 38px;
+  margin-top: 6px;
+}
+.commodities .commodities-container > .left .good > .con p.p-name a {
+  display: block;
+  height: 100%;
+  line-height: 19px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.commodities .commodities-container > .left .good > .con p.p-name a:hover {
+  color: #f42424;
+}
+.commodities .commodities-container > .left .good > .con p.p-store {
+  width: 100%;
+  height: 16px;
+  margin-top: 3px;
+  font-size: 12px;
+}
+.commodities .commodities-container > .left .good > .con p.p-store a {
+  color: #8c8c8c;
+}
+.commodities .commodities-container > .left .good > .con p.p-store i.iconfont {
+  color: #7b75f3;
+  cursor: pointer;
+}
+.commodities .commodities-container > .left .good > .con p.p-store i.iconfont:hover {
+  color: #f42424;
+}
+.commodities .commodities-container > .left .good > .con .label-list {
+  width: 100%;
+  height: 16px;
+  margin-top: 6px;
+}
+.commodities .commodities-container > .left .good > .con .p-operate {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.commodities .commodities-container > .left .good > .con .p-operate div {
+  line-height: 20px;
+  font-size: 12px;
+  border: 1px dotted #dbdbdb;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.commodities .commodities-container > .left .good > .con .p-operate div:hover {
+  border: 1px dashed #f42424;
+  color: #f42424;
+}
+.commodities .commodities-container > .left .good > .con .p-operate div:hover i.iconfont {
+  color: #f42424;
+}
+.commodities .commodities-container > .left .good > .con .p-operate div:last-of-type {
+  color: #f42424;
+}
+.commodities .commodities-container > .left .good > .con .p-operate div:last-of-type i.iconfont {
+  color: #f42424;
+}
+.commodities .commodities-container > .right {
+  width: 231.66px;
+}
+.commodities .commodities-container > .right i.close {
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 12px;
+}
+.commodities .commodities-container > .right .recommend {
+  border: 1px solid #d2d2d2;
+  padding: 0 15px 10px;
+  width: 100%;
+}
+.commodities .commodities-container > .right .recommend > p.title {
+  font-size: 16px;
+  line-height: 42px;
+  height: 42px;
+  color: #8c8c8c;
+}
+.commodities .commodities-container > .right .recommend .goods .good {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.commodities .commodities-container > .right .recommend .goods .good .image {
+  width: 100%;
+  height: 199.66px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.commodities .commodities-container > .right .recommend .goods .good .image:hover {
+  opacity: 0.5;
+}
+.commodities .commodities-container > .right .recommend .goods .good .image img {
+  height: 100%;
+}
+.commodities .commodities-container > .right .recommend .goods .good p.price {
+  height: 24px;
+  line-height: 24px;
+  color: #f42424;
+}
+.commodities .commodities-container > .right .recommend .goods .good a.p-name {
+  height: 100%;
+  line-height: 19px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.commodities .commodities-container > .right .recommend .goods .good a.p-name:hover {
+  color: #f42424;
+}
+.commodities .commodities-container > .right .recommend .goods .good p.soldout {
+  font-size: 12px;
+  line-height: 18px;
+  height: 18px;
+  color: #8c8c8c;
+}
+.commodities .commodities-container > .right .recommend .goods .good:last-of-type {
+  margin-bottom: 0px;
+}
+.guess {
+  margin-bottom: 80px;
+}
+.guess .guess-container {
+  margin-top: 15px;
+}
+.guess .guess-container .big-title {
+  background: url("../img/dian-ico2.png") repeat-x 0 18px;
+  overflow: hidden;
+  padding: 0 0 20px;
+  height: 55px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 33px;
+}
+.guess .guess-container .big-title h3 {
+  display: inline;
+  padding: 0 50px;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 21px;
+  color: #555;
+}
+.guess .guess-container .goods {
+  display: flex;
+  justify-content: space-between;
+}
+.guess .guess-container .goods .good {
+  width: 190px;
+}
+.guess .guess-container .goods .good .image {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.guess .guess-container .goods .good .image:hover {
+  opacity: 0.5;
+}
+.guess .guess-container .goods .good .image img {
+  height: 100%;
+}
+.guess .guess-container .goods .good p.price {
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 6px;
+  color: #f42424;
+}
+.guess .guess-container .goods .good .p-name {
+  margin-top: 5px;
+}
+.guess .guess-container .goods .good .p-name a {
+  font-size: 12px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.guess .guess-container .goods .good .p-name a:hover {
+  color: #f42424;
+}
+.guess .guess-container .goods .good .p-num {
+  margin-top: 7px;
+  color: #8c8c8c;
+  font-size: 12px;
+}
