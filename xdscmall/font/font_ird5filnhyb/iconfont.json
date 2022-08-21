@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "684176",
+      "name": "YDUI-收藏(空心)",
+      "font_class": "yduishoucangkongxin",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    }
+  ]
+}

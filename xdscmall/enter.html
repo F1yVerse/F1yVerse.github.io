@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/enter.css" />
+  </head>
+
+  <body>
+    <!-- 登录导航栏 -->
+    <div class="AG">
+      <div class="AG_enter">
+        <div class="AG_enter_c1">
+          <img src="./img/enter/user_login_logo.png" alt="" />
+        </div>
+        <span>国内首款B2B2C2C电商生态系统</span>
+        <div class="AG_enter_c2">
+          <span>
+            <a href="./register.html">还没有账号?</a>
+          </span>
+          <span>
+            <a href="./register.html">免费注册</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- 登录主体(内含登录页面) -->
+    <div class="AG_enter1">
+      <div class="AG_enter1_c1">
+        <img src="./img/enter/1564453243544166182.jpg" alt="" />
+        <div class="AG_enter1_t1">
+          <div class="AG_enter1_j1">
+            <div class="ag_1">
+              <div class="ag_1_t1"></div>
+              <div class="ag_1_t2">用第三方账号直接登录</div>
+              <div class="ag_qq"></div>
+              <div class="ag_ewm">
+                <div class="ag_ewm1"></div>
+              </div>
+            </div>
+            <div class="ag_2">
+              <div class="ag_2_t1"></div>
+              <div class="ag_2_t2">账号登录</div>
+              <input
+                type=""
+                name=""
+                id=""
+                placeholder="用户名/邮箱/手机"
+                class="ag_inp1"
+              />
+              <span class="ag_ling1"></span>
+              <input type="" name="" id="" placeholder="密码" class="ag_inp2" />
+              <span class="ag_ling2"></span>
+              <input
+                type=""
+                name=""
+                id=""
+                placeholder="验证码"
+                class="ag_inp3"
+              />
+              <span class="ag_ling3"></span>
+              <div class="ag_put"></div>
+              <a href="./index.html">
+                <div class="ag_2_t3">登录</div>
+              </a>
+              <span class="ag_ling4"> 忘记密码? </span>
+            </div>
+          </div>
+          <div class="ag_enter_j1">
+            <div class="ag_1">
+              <div class="ag_1_t1"></div>
+              <div class="ag_1_t2">用第三方账号直接登录</div>
+              <div class="ag_qq"></div>
+              <div class="ag_ewm3">
+                <div class="ag_ewm4"></div>
+              </div>
+            </div>
+            <div class="ag_enter_k1">
+              <div class="ag_2_t1"></div>
+              <div class="ag_2_t2">账号登录</div>
+              <div class="ag_big_ewm"></div>
+              <span class="ag_liang6"
+                >打开<span class="ag_liang7">大商创App</span>扫描二维码</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="AG_enter2">
+      <ul>
+        <li><a href="">首页</a> |</li>
+        <li><a href="">隐私保护</a> |</li>
+        <li><a href="">联系我们</a> |</li>
+        <li><a href="">免责条款</a> |</li>
+        <li><a href="">公司简介</a> |</li>
+        <li><a href="">商家入驻</a> |</li>
+        <li><a href="">供应商入驻</a> |</li>
+        <li><a href="">意见反馈</a> |</li>
+      </ul>
+      <ul>
+        <li><a href="">b2b2c</a> |</li>
+        <li><a href="">多用户商城系统</a> |</li>
+        <li><a href="">商城系统</a> |</li>
+        <li><a href="">ecjia新零售</a> |</li>
+      </ul>
+      <p class="ag_p2">ICP备案证书号:沪ICP备14029880号-5</p>
+      <p class="ag_p1">
+        <a href="">版权所有</a>
+        <a href="">©</a>
+        <a href="">2005-2021</a>
+        <a href="">大商创，并保留所有权利</a>
+        <a href="">POWERED</a>
+        <a href="">BY</a>
+        <a href="">DSCMALL</a>
+      </p>
+    </div>
+    <!-- 右上角二维码与身份证切换效果 -->
+    <script>
+      var AG_enter1_j1 = document.querySelector(".AG_enter1_j1");
+      var ag_enter_j1 = document.querySelector(".ag_enter_j1");
+      var ag_ewm = document.querySelector(".ag_ewm");
+      var ag_ewm3 = document.querySelector(".ag_ewm3");
+      ag_ewm.onclick = function () {
+        AG_enter1_j1.style.display = "none";
+        ag_enter_j1.style.display = "block";
+      };
+      ag_ewm3.onclick = function () {
+        AG_enter1_j1.style.display = "block";
+        ag_enter_j1.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,423 @@
+.AG {
+  width: 100%;
+  height: 130px;
+  margin: 0 auto;
+}
+
+.AG_enter {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+
+.AG_enter .AG_enter_c1 {
+  width: 159px;
+}
+
+.AG_enter_c1 > img {
+  width: 100%;
+}
+
+.AG_enter > span {
+  font-size: 16px;
+  color: #666;
+  margin-left: 6px;
+}
+
+.AG_enter_c2 > span:nth-child(1) {
+  font-size: 14px;
+  margin-left: 650px;
+}
+
+.AG_enter_c2 > span:nth-child(2) > a {
+  font-size: 14px;
+  color: red;
+  text-decoration: wavy;
+}
+
+.AG_enter1 {
+  width: 1200px;
+  height: 530px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  /* background-color: aqua; */
+  /* background-color: aqua; */
+  /* background: url(../img/1564453243544166182.jpg); */
+}
+
+.AG_enter1_c1 {
+  width: 1920px;
+  height: 530px;
+  /* margin: 0 auto; */
+  position: absolute;
+  left: -369px;
+  /* background-color: white; */
+  /* border: 1px solid saddlebrown; */
+  /* margin: 50px 500px; */
+}
+
+.AG_enter1_c1 > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.AG_enter1_t1 {
+  position: absolute;
+  z-index: 2;
+  width: 350px;
+  height: 400px;
+  top: 50px;
+  right: 350px;
+  background-color: white;
+}
+
+/* 二维码页面 */
+
+.AG_enter1_j1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+}
+
+.ag_1 {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  /* border: 0.2px solid saddlebrown; */
+}
+
+.ag_1_t1 {
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  top: 23px;
+  left: 77px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.ag_1_t2 {
+  font-size: 14px;
+  position: absolute;
+  width: 140px;
+  text-align: center;
+  height: 20px;
+  top: 13px;
+  left: 106px;
+  background-color: white;
+  z-index: 1;
+  /* border: 0.2px solid saddlebrown; */
+}
+
+.ag_qq {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url(../img/enter/login-icon.png) no-repeat;
+  left: 159px;
+  top: 46px;
+}
+
+.ag_qq:hover {
+  background: url(../img/enter/login-icon.png) -39px 0px no-repeat;
+}
+
+.ag_ewm {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  top: 0;
+  right: 0;
+  /* border-bottom: 52px solid #ffffff;
+    border-right: 52px solid transparent; */
+  background: url(../img/enter/二维码.png);
+}
+
+.ag_ewm1 {
+  width: 0;
+  height: 0;
+  border-bottom: 52px solid #ffffff;
+  border-right: 52px solid transparent;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.ag_2 {
+  width: 100%;
+  height: 310px;
+  /* border: 0.2px solid red; */
+  position: relative;
+}
+
+.ag_2_t1 {
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  top: 23px;
+  left: 77px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.ag_2_t2 {
+  font-size: 15px;
+  position: absolute;
+  width: 80px;
+  text-align: center;
+  height: 20px;
+  top: 13px;
+  left: 137px;
+  background-color: white;
+  z-index: 1;
+  /* border: 0.2px solid saddlebrown; */
+}
+
+.ag_inp1 {
+  position: absolute;
+  top: 60px;
+  width: 237px;
+  height: 35px;
+  padding-left: 33px;
+  left: 40px;
+}
+
+.ag_ling1 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  background: url(../img/enter/用户.png);
+}
+
+.ag_inp2 {
+  position: absolute;
+  top: 110px;
+  width: 237px;
+  height: 35px;
+  padding-left: 33px;
+  left: 40px;
+}
+
+.ag_ling2 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  background: url(../img/enter/242锁定.png);
+}
+
+.ag_inp3 {
+  position: absolute;
+  top: 160px;
+  width: 237px;
+  height: 35px;
+  padding-left: 33px;
+  left: 40px;
+}
+
+.ag_ling3 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  background: url(../img/enter/验证码.png);
+}
+
+.ag_put {
+  position: absolute;
+  top: 161px;
+  left: 203px;
+  width: 110px;
+  height: 37px;
+  background: url(../img/enter/微信图片_20220813150109.png);
+}
+
+.ag_2_t3 {
+  position: absolute;
+  top: 220px;
+  left: 40px;
+  width: 277px;
+  border-radius: 3px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.ag_ling4 {
+  width: 70px;
+  height: 20px;
+  color: #666;
+  font-size: 13px;
+  position: absolute;
+  top: 266px;
+  left: 40px;
+}
+
+/* 身份证页面 */
+
+.ag_enter_j1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 3;
+  display: none;
+}
+
+.ag_enter_k1 {
+  width: 100%;
+  height: 310px;
+  /* border: 0.2px solid red; */
+  position: relative;
+}
+
+.ag_big_ewm {
+  width: 180px;
+  height: 180px;
+  top: 60px;
+  left: 87px;
+  position: absolute;
+  background: url(../img/enter/微信图片_20220813103226.png);
+}
+
+.ag_liang6 {
+  width: 180px;
+  height: 20px;
+  position: absolute;
+  top: 260px;
+  left: 103px;
+  font-size: 12px;
+}
+
+.ag_liang7 {
+  color: red;
+}
+
+.ag_ewm3 {
+  position: absolute;
+  width: 65px;
+  height: 52px;
+  top: 0;
+  right: 0;
+  /* border-bottom: 52px solid #ffffff;
+    border-right: 52px solid transparent; */
+  background: url(../img/enter/身份证号.png);
+}
+
+.ag_ewm4 {
+  width: 0;
+  height: 0;
+  border-bottom: 48px solid #ffffff;
+  border-right: 55px solid transparent;
+  top: -1px;
+  right: 0;
+  position: absolute;
+}
+
+.AG_enter2 {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.AG_enter2 > ul:nth-child(1) {
+  width: 700px;
+  height: 20px;
+  font-size: 13px;
+  display: flex;
+  margin: 10px 250px;
+  flex-direction: row;
+  /* border: 0.2px solid saddlebrown; */
+}
+
+.AG_enter2 > ul:nth-child(1) > li {
+  margin-left: 20px;
+  color: #999;
+}
+
+.AG_enter2 > ul:nth-child(1) > li > a {
+  font-size: 13px;
+  color: #999;
+}
+
+.AG_enter2 > ul:nth-child(2) {
+  width: 400px;
+  height: 20px;
+  font-size: 13px;
+  display: flex;
+  margin: 0px 400px;
+  flex-direction: row;
+  /* border: 0.2px solid saddlebrown; */
+}
+
+.AG_enter2 > ul:nth-child(2) > li {
+  margin-left: 20px;
+  color: #999;
+}
+
+.AG_enter2 > ul:nth-child(2) > li > a {
+  font-size: 13px;
+  color: #999;
+}
+
+.AG_enter2 > p {
+  position: absolute;
+  font-size: 13px;
+  width: 250px;
+  color: #999;
+  top: 90px;
+  left: 200px;
+}
+
+.AG_enter2 > .ag_p1 {
+  width: 600px;
+  height: 20px;
+  font-size: 13px;
+  margin: 40px 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.AG_enter2 > .ag_p1 > a {
+  color: #999;
+  margin-left: 20px;
+}
+
+.AG_enter2 .ag_p2 {
+  margin: -10px 260px;
+}
+
+.AG_enter2 > ul > li > a:hover {
+  color: red;
+}
+
+.AG_enter2 a:hover {
+  color: red;
+}
+
+.AG_enter2 > p:hover {
+  color: red;
+}

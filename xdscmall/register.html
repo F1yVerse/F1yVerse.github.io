@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+
+  <body>
+    <!-- 登录导航栏 -->
+    <div class="AG">
+      <div class="AG_enter">
+        <div class="AG_enter_c1">
+          <img src="./img/register/user_login_logo (1).png" alt="" />
+        </div>
+        <span>国内首款B2B2C2C电商生态系统</span>
+        <div class="AG_enter_c2">
+          <span>
+            <a href="./enter.html">已经注册可</a>
+          </span>
+          <span>
+            <a href="./enter.html">在此登录</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="GK">
+      <div class="GK_big_put"></div>
+      <p class="gk_p1">手 机 号 码</p>
+      <p class="gk_p2">验　证　码</p>
+      <p class="gk_p3">手机验证码</p>
+      <p class="gk_p4">设 置 密 码</p>
+      <p class="gk_p5">确 认 密 码</p>
+
+      <input type="" name="" id="" placeholder="请输入手机号" class="gk_inp1" />
+      <input
+        type=""
+        name=""
+        id=""
+        placeholder="请输入图片验证码"
+        class="gk_inp2"
+      />
+      <input
+        type=""
+        name=""
+        id=""
+        placeholder="请输入短信验证码"
+        class="gk_inp3"
+      />
+      <input type="" name="" id="" placeholder="请输入密码" class="gk_inp4" />
+      <input
+        type=""
+        name=""
+        id=""
+        placeholder="请再次确认密码"
+        class="gk_inp5"
+      />
+      <span class="gk_sp1">
+        <img src="./img/register/微信图片_20220813183749.png" alt="" />
+      </span>
+      <span class="gk_sp2"> 获取验证码 </span>
+      <div class="gk_shi1">
+        <img src="./img/register/未勾选.png" alt="" class="gk_img1" />
+        <img src="./img/register/勾选.png" alt="" class="gk_img2" />
+      </div>
+      <span class="gk_sp3">我已阅读并同意</span>
+      <span class="gk_sp4">《大商创用户注册协议》</span>
+      <a href="./enter.html">
+        <div class="gk_register">注册</div>
+      </a>
+    </div>
+    <div class="GK_1">
+      <p>
+        <a href="">首页</a> | <a href="">隐私保护</a> |
+        <a href="">联系我们</a> | <a href="">免责条款</a> |
+        <a href="">公司简介</a> | <a href="">商家入驻</a> |
+        <a href="">供应商入驻</a> | <a href="">意见反馈</a> |
+      </p>
+      <span>
+        <a href="">b2b2c</a> | <a href="">多用户商城系统</a> |
+        <a href="">商城系统</a> | <a href="">ecjia新零售</a> |
+      </span>
+      <div class="gk_t1">
+        ICP备案证书号:<span class="gk_sp5">沪ICP备14029880号-5</span>
+      </div>
+      <i>
+        <a href="">版权所有</a>
+        <a href="">©</a>
+        <a href="">2005-2021</a>
+        <a href="">大商创，并保留所有权利</a>
+        <a href="">POWERED</a>
+        <a href="">BY</a>
+        <a href="">DSCMALL</a>
+      </i>
+    </div>
+    <!-- 勾选框 -->
+    <script>
+      var gk_shi1 = document.querySelector(".gk_shi1");
+      var gk_img1 = document.querySelector(".gk_img1");
+      var gk_img2 = document.querySelector(".gk_img2");
+      var num = 1;
+      gk_shi1.onclick = function () {
+        if (num == 1) {
+          gk_img1.style.display = "none";
+          gk_img2.style.display = "block";
+          num = 2;
+        } else if (num == 2) {
+          gk_img2.style.display = "none";
+          gk_img1.style.display = "block";
+          num = 1;
+        }
+      };
+    </script>
+  </body>
+</html>

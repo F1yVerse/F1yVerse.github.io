@@ -23,7 +23,7 @@ $(".nav-btn").hover(
       .children()
       .stop()
       .show(0, "linear", function () {});
-    $(".block").css({
+    $(".xxy_block").css({
       left: $(this).position().left + 50,
       display: "block",
       "background-color": "#fff",
@@ -34,7 +34,7 @@ $(".nav-btn").hover(
       .children()
       .stop()
       .hide(0, "linear", function () {});
-    $(".block").css({
+    $(".xxy_block").css({
       display: "none",
     });
   }
@@ -59,84 +59,86 @@ $(".toprank-container .hd ul li").mouseover(function () {
       .fadeIn(function () {});
   }
 });
-$.each(obj.shoes.rexiao, function (ind, ele) {
+$.each(obj.shoes.rexiao, function (ind, val) {
   $(
     `
     <div class="item">
-    <a class="image" href="javascript:;">
-    <img src="${ele.imgUrl}" alt="" />
+    <a class="image" href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}">
+    <img src="${val.imgUrl}" alt="" />
   </a>
   <div class="det">
-  <a href="javascript:;" class="name">${ele.name}</a>
-    <p class="price">${ele.price}</p>
+  <a href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}" class="name">${val.name}</a>
+    <p class="price">${val.price}</p>
   </div>
 </div>
   `
   ).appendTo($(".toprank-container .bd1"));
 });
-$.each(obj.shoes.cuxiao, function (ind, ele) {
+$.each(obj.shoes.cuxiao, function (ind, val) {
   $(
     `
     <div class="item">
-    <a class="image" href="javascript:;">
-    <img src="${ele.imgUrl}" alt="" />
+    <a class="image" href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}">
+    <img src="${val.imgUrl}" alt="" />
   </a>
   <div class="det">
-  <a href="javascript:;" class="name">${ele.name}</a>
-    <p class="price">${ele.price}</p>
+  <a href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}" class="name">${val.name}</a>
+    <p class="price">${val.price}</p>
   </div>
 </div>
   `
   ).appendTo($(".toprank-container .bd2"));
 });
 // 今日推荐商品渲染
-$.each(obj.shoes.recToday, function (ind, ele) {
-  console.log(ele);
+$.each(obj.shoes.recToday, function (ind, val) {
+  console.log(val);
   $(
     `
     <div class="item">
-      <a class="image" href="javascript:;">
+      <a class="image" href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}">
         <div class="img">
-          <img src="${ele.imgUrl}" alt="" />
+          <img src="${val.imgUrl}" alt="" />
         </div>
       </a>
-      <a class="name" href="javascript:;">${ele.name}</a>
-      <p class="price">${ele.price}</p>
+      <a class="name" href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}">${val.name}</a>
+      <p class="price">${val.price}</p>
   </div>
   `
   ).appendTo($(".rec-today-container .main"));
 });
 // 新品到货商品渲染
-$.each(obj.shoes.newPic, function (ind, ele) {
-  console.log(ele);
+$.each(obj.shoes.newPic, function (ind, val) {
+  console.log(val);
   $(
     `
     <div class="item">
-      <a class="image" href="javascript:;">
+      <a class="image" href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}">
         <div class="img">
-          <img src="${ele.imgUrl}" alt="" />
+          <img src="${val.imgUrl}" alt="" />
         </div>
       </a>
-      <a class="name" href="javascript:;">${ele.name}</a>
-      <p class="price">${ele.price}</p>
+      <a class="name" href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}">${val.name}</a>
+      <p class="price">${val.price}</p>
   </div>
   `
   ).appendTo($(".new-pic-container .main"));
 });
 // 浏览记录商品渲染
-$.each(obj.shoes.history, function (ind, ele) {
-  console.log(ele);
+$.each(obj.shoes.history, function (ind, val) {
+  console.log(val);
   $(
     `
     <div class="item">
-    <div class="image">
-      <img src="${ele.imgUrl}" alt="" />
-    </div>
-    <p class="price">${ele.price}</p>
+    <a href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}">
+      <div class="image">
+      <img src="${val.imgUrl}" alt="" />
+      </div>
+    </a>
+    <p class="price">${val.price}</p>
     <p class="name">
-      <a href="javascript:;">${ele.name}</a>
+      <a href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}">${val.name}</a>
     </p>
-    <a href="javascript:;" class="btn">查看详情</a>
+    <a href="./product.html?name=${val.name}&print=${val.price}&img=${val.imgUrl}" class="btn">查看详情</a>
   </div>
   `
   ).appendTo($(".atwillgo-container .main"));
