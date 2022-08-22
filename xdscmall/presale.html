@@ -687,6 +687,27 @@
       scrolling="no"
       style="margin-top: 75px; display: block"
     ></iframe>
+     <!-- tab切换 -->
+     <script>
+      var list = document.querySelector('.Nav').querySelectorAll('li');
+      var items = document.querySelector('.EDGM_BIG').querySelectorAll('.item');
+      for (var i = 0; i < list.length; i++) {
+          list[i].onclick = function() {
+              // 导航栏样式切换，排他算法
+              for (var i = 0; i < list.length; i++) {
+                  list[i].className = '';
+              }
+              this.className = 'current';
+
+              // 下面展示内容切换，排他算法
+              var index = this.getAttribute('data-index');
+              for (var i = 0; i < items.length; i++) {
+                  items[i].style.display = 'none';
+              }
+              items[index].style.display = 'block';
+          }
+      }
+  </script>
     <script>
       //渲染图片
       var g_img1 = document.querySelectorAll(".g_img1");
