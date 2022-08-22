@@ -1899,60 +1899,24 @@ body {
   transform: translateX(-10px);
 }
 .sale_box .sale_ul .sale1 {
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    right 0,
-    from(#e89621),
-    to(#f5c568)
-  );
+  background: -webkit-gradient(linear, 0 0, right 0, from(#e89621), to(#f5c568));
 }
 .sale_box .sale_ul .sale2 {
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    right 0,
-    from(#325bb4),
-    to(#4c9afe)
-  );
+  background: -webkit-gradient(linear, 0 0, right 0, from(#325bb4), to(#4c9afe));
 }
 .sale_box .sale_ul .sale3 {
   margin-right: 0px;
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    right 0,
-    from(#1c9daf),
-    to(#40cda7)
-  );
+  background: -webkit-gradient(linear, 0 0, right 0, from(#1c9daf), to(#40cda7));
 }
 .sale_box .sale_ul .sale4 {
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    right 0,
-    from(#d13837),
-    to(#df6d4f)
-  );
+  background: -webkit-gradient(linear, 0 0, right 0, from(#d13837), to(#df6d4f));
 }
 .sale_box .sale_ul .sale5 {
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    right 0,
-    from(#ca4283),
-    to(#eb75cf)
-  );
+  background: -webkit-gradient(linear, 0 0, right 0, from(#ca4283), to(#eb75cf));
 }
 .sale_box .sale_ul .sale6 {
   margin-right: 0px;
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    right 0,
-    from(#5d40c1),
-    to(#8c5fdb)
-  );
+  background: -webkit-gradient(linear, 0 0, right 0, from(#5d40c1), to(#8c5fdb));
 }
 .article {
   margin: 30px auto 0px;
@@ -2028,7 +1992,7 @@ body {
   opacity: 1;
   position: fixed;
   left: 10%;
-  top: 70%;
+  top: 50%;
   transition: all 0.2s;
   display: none;
 }
