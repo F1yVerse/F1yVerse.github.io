@@ -2,6 +2,13 @@
   font-family: cascadia;
   src: url("../font/CascadiaCode.ttf");
 }
+@font-face {
+  font-family: pingfangSC;
+  src: url("../font/PingFangSC.ttf");
+}
+* {
+  font-family: pingfangSC;
+}
 html,
 body {
   margin: 0;
