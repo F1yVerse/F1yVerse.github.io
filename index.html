@@ -25,7 +25,9 @@
                 console.log(val);
                 `${date} | ${val.title}`;
                 $(
-                  `<li><a href="./detail.html?data=${val.path}">${date} | ${val.title}</a></li>`
+                  `<li><a href="./detail.html?data=${val.path}">${date} | ${
+                    val.title
+                  } | <span>${val.desc ? val.desc : ""}</span></a></li>`
                 ).appendTo($("ul"));
               });
             }

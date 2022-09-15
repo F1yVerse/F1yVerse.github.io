@@ -5,17 +5,13 @@
   color: #fff;
   text-decoration: none;
 }
-.menu {
-  opacity: 0.95;
-}
 .menu .menu-container {
   border-radius: 1rem;
-  background-color: #191919;
+  background-color: #191919ee;
   width: 1200px;
   margin: 0 auto 1rem;
   padding: 1rem;
   box-sizing: border-box;
-  opacity: 0.95;
   min-height: 600px;
 }
 .menu .menu-container li {
@@ -26,6 +22,10 @@
 .menu .menu-container li a {
   display: block;
   width: 100%;
+}
+.menu .menu-container li a span {
+  opacity: 0.5;
+  font-size: 0.8rem;
 }
 .menu .menu-container li a:hover {
   text-decoration: underline;

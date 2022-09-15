@@ -6,16 +6,15 @@
   text-decoration: none;
 }
 .menu {
-  opacity: 0.95;
   .menu-container {
     border-radius: 1rem;
-    background-color: #191919;
-    // backdrop-filter: blur(50px);
+    background-color: #191919ee;
+    // backdrop-filter: blur(5px);
     width: 1200px;
     margin: 0 auto 1rem;
     padding: 1rem;
     box-sizing: border-box;
-    opacity: 0.95;
+    // opacity: 0.95;
     min-height: 600px;
     li {
       height: 50px;
@@ -24,6 +23,10 @@
       a {
         display: block;
         width: 100%;
+        span {
+          opacity: 0.5;
+          font-size: 0.8rem;
+        }
         &:hover {
           text-decoration: underline;
         }
