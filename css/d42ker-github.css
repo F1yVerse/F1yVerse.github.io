@@ -35,8 +35,8 @@ html {
 }
 
 body {
-  font-family: "IBM Plex Sans", "Microsoft YaHei", "微软雅黑", "Open Sans",
-    "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "IBM Plex Sans","Microsoft YaHei", "微软雅黑", "Open Sans", "Clear Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
   color: #d0d0d0;
   background-color: var(--bg-color);
   line-height: 1.75;
@@ -331,7 +331,7 @@ tt {
 
 .md-tag {
   color: #a7a7a7;
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .md-toc {
@@ -374,8 +374,8 @@ footer.ty-footer {
 }
 
 .sidebar-content-content {
-  font-family: "IBM Plex Sans", "Microsoft YaHei", "微软雅黑", "Open Sans",
-    "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "IBM Plex Sans","Microsoft YaHei", "微软雅黑", "Open Sans", "Clear Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif !important;
 }
 
 .outline-content {
@@ -462,8 +462,8 @@ header,
 .context-menu,
 .megamenu-content,
 footer {
-  font-family: "IBM Plex Sans", "Microsoft YaHei", "微软雅黑", "Open Sans",
-    "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "IBM Plex Sans","Microsoft YaHei", "微软雅黑", "Open Sans", "Clear Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }
 
 .megamenu-content {
@@ -485,11 +485,11 @@ span.file-list-item-file-name-part {
 }
 
 .file-list-item-summary {
-  height: 3rem;
-  overflow: hidden;
-  font-size: 13px;
-  line-height: 16px;
-  opacity: 0.7 !important;
+    height: 3rem;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: .7 !important;
 }
 
 .mac-seamless-mode #typora-sidebar {
@@ -653,8 +653,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   right: -99999px;
   background: #80808020;
 }
-.cm-s-typora-default .cm-code,
-.cm-s-typora-default .cm-comment {
+.cm-s-typora-default .cm-code, .cm-s-typora-default .cm-comment {
   color: #8997d4;
   font-family: monospace;
   font-family: var(--monospace);
@@ -690,7 +689,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 table/*,
-input */ {
+input */{
   border: 1px solid #9292928f !important;
 }
 
@@ -699,8 +698,7 @@ input */ {
   border: 1px solid #9292928f !important;
 }
 
-#top-titlebar .toolbar-icon.btn.hover,
-#top-titlebar .toolbar-icon.btn:hover {
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
   background-color: #212121;
 }
 
