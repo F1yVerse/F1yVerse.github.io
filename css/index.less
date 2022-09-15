@@ -1,31 +1,33 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
-  padding-top: 30vh;
-  background-color: #fff;
-  background-image: url("../img/bg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
 }
-#markdown-container {
-  border-radius: 1rem;
-  background-color: #191919;
-  // backdrop-filter: blur(50px);
-  width: 1200px;
-  margin: 0 auto 1rem;
-  padding: 1rem;
-  box-sizing: border-box;
+.menu {
   opacity: 0.95;
-}
-pre {
-  background-color: #42424280;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-pre code {
-  background-color: transparent !important;
-  border: 0px solid transparent !important;
-  font-size: 0.9rem;
+  .menu-container {
+    border-radius: 1rem;
+    background-color: #191919;
+    // backdrop-filter: blur(50px);
+    width: 1200px;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    opacity: 0.95;
+    min-height: 600px;
+    li {
+      height: 50px;
+      line-height: 50px;
+      font-size: 22px;
+      a {
+        display: block;
+        width: 100%;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

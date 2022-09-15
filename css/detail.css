@@ -1,0 +1,23 @@
+#markdown-container {
+  border-radius: 1rem;
+  background-color: #191919;
+  width: 1200px;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  opacity: 0.95;
+}
+#markdown-container pre {
+  background-color: #42424280;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+#markdown-container pre code {
+  background-color: transparent !important;
+  border: 0px solid transparent !important;
+  font-size: 0.9rem;
+  font-family: cascadia;
+}
+#markdown-container code {
+  font-family: cascadia;
+}
