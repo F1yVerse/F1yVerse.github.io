@@ -9,7 +9,7 @@
   margin: 0 auto 1rem;
   padding: 1rem;
   box-sizing: border-box;
-  opacity: 0.95;
+  opacity: 0.975;
   pre {
     background-color: #42424280;
     padding: 1rem;
@@ -17,8 +17,10 @@
     code {
       background-color: transparent !important;
       border: 0px solid transparent !important;
-      font-size: 0.9rem;
-      font-family: cascadia;
+      // font-size: 0.9rem;
+      & * {
+        font-family: cascadia !important;
+      }
     }
   }
   code {

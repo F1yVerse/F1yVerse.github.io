@@ -8,7 +8,7 @@
   margin: 0 auto 1rem;
   padding: 1rem;
   box-sizing: border-box;
-  opacity: 0.95;
+  opacity: 0.975;
 }
 #markdown-container pre {
   background-color: #42424280;
@@ -18,8 +18,9 @@
 #markdown-container pre code {
   background-color: transparent !important;
   border: 0px solid transparent !important;
-  font-size: 0.9rem;
-  font-family: cascadia;
+}
+#markdown-container pre code * {
+  font-family: cascadia !important;
 }
 #markdown-container code {
   font-family: cascadia;
